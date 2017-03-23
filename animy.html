@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animes</title>
+	<style type="text/css">
+		.stage {
+			background: #EAEAED;
+			border-radius: 6px;
+			height: 150px;
+			width: 538px;
+			text-align: center;
+			position: relative;
+		}
+		.ball {
+			background: #2BD34A;
+			border-radius: 50%;
+			height: 50px;
+			width: 50px;
+			margin: 0;
+			position: absolute;
+		}
+		.stage:hover .ball {
+			animation: slide 1.5s linear;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+			animation-direction: reverse;
+		}
+		@keyframes slide {
+			0% {
+				left: 244px;
+				top: 50px;
+
+			}
+			10% {
+				left: 243px;
+				top: 51px;
+			}
+			20% {
+				left: 242px;
+				top: 52px
+			}
+			/*25% {
+				left: 241px;
+				top: 52.5px;
+			}*/
+			30% {
+				left: 242px;
+				top: 53px;
+			}
+			40% {
+				left: 243px;
+				top: 54px;
+			}
+
+
+			50% {
+				left: 244px;
+				top: 55px;
+
+			}
+			60% {
+				left: 245px;
+				top: 54px;
+			}
+			70% {
+				left: 246px;
+				top: 53px;
+
+			}
+			/*75% {
+				left: 247px;
+				top: 52.5px;
+			}*/
+			80% {
+				left: 246px;
+				top: 52px;
+			}
+			90% {
+				left: 245px;
+				top: 51px;
+			}
+			100% {
+				left: 244px;
+				top: 50px;
+			}
+		}
+		/*.stage:active .ball {
+			animation-play-state: paused;
+			
+		}*/
+	</style>
+</head>
+<body>
+	<div class="stage">
+		<div class="ball"></div>
+	</div>
+</body>
+</html>
