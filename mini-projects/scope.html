@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Private and Public Variables</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Life(name, profession, gender) {
+			this.name = name;
+			this.profession = profession;
+			this.gender = gender;
+			//public variables
+
+			this.displayChar = function() {
+				console.log( this.name + " is a " + this.gender + " " + this.profession);
+			}
+			this.setChar = function(newName, newProf, newGender) {
+				this.name = newName;
+				this.profession = newProf;
+				this.gender = newGender;
+			}
+			this.resetChar = function() {
+				this.name = "";
+				this.profession = "";
+				this.gender = "";
+ 			}
+			//public methods
+			var password = 0000;
+			var genotype = "AB";
+			var hivStatus = "negative";
+
+			var showStatus = function() {
+				var code = prompt("Enter your password");
+				if (code != password) {
+					alert("You don't have permission to access this");
+				}else {
+					console.log("Your HIV Status is: " + hivStatus);
+				}
+			}
+			this.showStatus = showStatus;
+
+			var setStatus = function(x, y, z) {
+				bloodgroup = x;
+				genotype = y;
+
+			}
+			this.setStatus = setStatus;
+			var changePassword = function() {
+				var oldPass = prompt("Enter your old password");
+				if (newPass != password) {
+					console.log("You entered incorrect password");
+				} else { 
+					var newPass = prompt("Enter the new password");
+					password = newPass;
+				}
+			}
+			this.changePassword = changePassword;
+			//private methods
+		}
+		var guy = new Life( "Aboy", "Designer", "male");
+		//console.log(guy);
+		guy.displayChar();
+		guy.showStatus();
+		
+
+	</script>
+</body>
+</html>

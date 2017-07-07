@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>overlays</title>
+	<style type="text/css">
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 300px;
+			height: 400px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.overlay{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.5);
+			z-index: 2;
+			transform: translateY(-300px);
+			transition: all ease 1s;
+		}
+		.container:hover,
+		.overlay {
+			transform: translateY(0px);
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+		}
+		div .card {
+			background: #EEE;
+		}
+		div .card p {
+			min-height: 100px;
+			margin: 0;
+			display: flex;
+			align-items: center;
+			align-content: center;
+			justify-content: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<img src="C5g4hOXWAAAkacj.jpg">
+			<p>A</p>
+			<div class="overlay">Don't I look cool!</div>
+		</div>
+	</div>
+</body>
+</html>

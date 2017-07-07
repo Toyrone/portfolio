@@ -1,0 +1,138 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #EEE!important;
+	font-family: 'Varela Round', sans-serif!important;
+}
+.navbar {
+	background: #1AA59A;
+	border-radius: 0!important;
+}
+li button {
+	position: relative;
+	top: 8px;	
+}
+.container-fluid {
+	margin: 0 50px !important;
+}
+.container-fluid li a {
+	color: grey!important;
+	margin: auto;
+}
+.backcover {
+	background-image: url("img/backg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 550px;
+}
+.panel {
+	background: #222!important;
+	opacity: 0.8;
+	border: none;
+}
+table {
+	background: #eee!important;
+}
+tbody tr td {
+	min-height: 38px!important;
+} 
+.logo {
+	padding-top: 25px;
+}
+.logo img {
+	height: 75px;
+}
+.panel .panel-body {
+	padding: 0;
+}
+.flex-con {
+	display: flex;
+}
+.dropdown-menu {
+	background: #222;
+	/*border: none;*/ 
+}
+    
+.nav li a:hover, .nav li a:focus, .nav li a:active {
+ 	background: #222;
+ 	opacity: 0.8;
+ 	color: white;
+ }
+
+
+footer {
+	background: #1AA59A;
+	height: 20px;
+	padding: 10px 50px;
+	color: white;
+	text-decoration: normal;
+}
+.pull-right ul.flex-con li a {
+	color: white;
+	text-decoration: none; 
+}
+.pull-right ul.flex-con li a i {
+	padding: 0 15px;
+}
+.pull-left p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+ .navbar .pull-left {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.flex-auto {
+	display: flex;
+	margin: auto;
+}
+span.input-group-btn button {
+	margin-top: -15px;
+}
+.stretch {
+	display: flex;
+	margin: auto;
+}
+.stretch button {
+	margin-top: -15px;
+}
+.stretch .logo img{
+	width: 60px;
+	height: auto;
+	border-radius: 50%;
+}
+li.stretch a:hover {
+	background: #1AA59A;
+}
+li.stretch a h3 {
+	color: white;
+}
+li.stretch button {
+	border: none;
+}
+.container-fluid.pull-right.flex-con {
+	height: 105px;
+}
+ul.nav.co-link li a {
+	color: #b3b3b3!important;
+}
+button.btn-lg {
+	background: #1ddece;
+	color: white;
+	border: none;
+}
+button.btn-lg:hover {
+	color: #1ddece;
+	background: white;
+}
+.right-pad {
+	padding-right: 15px;
+}

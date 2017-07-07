@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	background: #FFF;	
+	font-family: "Open Sans Semi Bold", vedana, tahoma, sans-serif;
+}
+.navbar-default ul li a {
+	padding-top: 2px;
+	padding-bottom: 1px;
+	font-size: 13px;
+	height: 20px;
+
+}
+.btn-primary {
+	padding-top: 1px;
+	padding-bottom: 4px;
+	border-radius: 0px;
+	background:  #004080;
+	color: #FFF;
+	
+}
+.bottoms {
+	border-bottom: 1px solid #e6e6e6;
+	padding-bottom: 2px;
+	padding-top: 0;
+}
+.flex-container {
+	display: flex;
+}
+.autos {
+	margin: auto;
+}
+
+
+.flex-container .women-footer:hover {
+	color: #FFF;
+}
+
+.gallery-item1 img {
+	flex: 1;
+	max-width: 100%;
+	
+}
+.gallery-item2 {
+	flex: 1;
+	
+}
+.gallery-item3 {
+	flex: 1;
+	
+}
+.gallery-item4 {
+	flex: 1;
+	
+}

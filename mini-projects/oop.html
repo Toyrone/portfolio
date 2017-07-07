@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object oriented Programming</title>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+	function MyClass(name, age, gender, character) {
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+		this.character = function() {
+			console.log("I like to smile");
+		}
+	}	
+	
+	//  Instantiation   //
+	var frontEnd = new MyClass( "Toyosi", 50, "male");
+	console.log(frontEnd);
+
+	function Animal(bone,legs, eyes, walk) {
+		this.bone = bone;
+		this.legs = legs;
+		this.eyes = eyes;
+		this.walk = function() {
+			console.log("All animals can move");
+		}
+	}
+
+	function Bird(wing, beak, claw, fly) {
+		this.wing = wing;
+		this.beak = beak;
+		this.claw = claw;
+		this.fly = function() {
+			console.log("All birds can fly");
+		}
+	}
+	function Reptile(tail, scale, teeth, walk) {
+		this.tail = tail;
+		this.scale = scale;
+		this.teeth = teeth;
+		this.walk = function() {
+			console.log("We all love to crawl");
+		}
+	}
+	//Animal.prototype.tail = 4;
+
+	Bird.prototype = new Animal();
+	Bird.prototype.tail = 4;
+	var hen = new Bird(2, "small", 10);
+	var lizard = new Reptile( 1, "many", "tiny" );
+	var lion = new Animal(294, 4, 2);
+
+	console.log(hen);
+	console.log(lizard);
+	console.log(lion);
+	lion.walk();
+	lizard.walk();
+	hen.fly();
+	console.log(Bird);
+	hen.walk();
+	console.log(hen.tail);
+</script>   
+
+</body>
+</html>

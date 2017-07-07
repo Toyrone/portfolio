@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<meta name=description content="">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/plugins/bootstrap/css/font-awesome.css">
+		<title>Story</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header></header>
+			<section class="main">
+				
+				<div class="upload">
+					<h4>Create a post</h4>
+					<div class="form-group">
+						<textarea name="textarea" id="inputTextArea" class="form-control" rows="3" required="required"></textarea>
+					</div>
+					<div class="upload-flex">
+						<div class="imageContainer">
+							<img src="#" class="picture_src" id="picture_preview">
+							<input type="file" id="upload">
+						</div>
+						<select id="location">
+							<option>Abuja</option>
+							<option>Lagos</option>
+							<option>Plateau</option>
+							<option>Kaduna</option>
+							<option>Rivers</option>
+						</select>
+						<button id="post" type="button" class="btn btn-primary">Post <i class="fa fa-send pull-right"></i></button>
+					</div>
+					
+				</div>
+				<h3 >All posts: <span id="allUsers">0</span></h3>
+				<div class="posts">
+
+								
+					
+					
+
+				</div>
+			</section>
+			<footer></footer>
+		</div>
+		<script src="./assets/plugins/jquery/jquery.js"></script>
+		<script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="./assets/js/main.js"></script>
+		<script>
+			app.storyHandler();
+			app.imageHandler();
+		</script>
+	</body>
+</html>

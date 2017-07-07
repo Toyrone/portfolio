@@ -1,0 +1,268 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <!-- start nav -->
+    <nav class="navbar navcolor navbar-fixed-top" role="navigation"> 
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="" href="#"><img class="logoimg" src="img/logo.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="#home"><strong>HOME</strong></a></li>
+            <li><a href="#about"><strong>ABOUT US</strong></a></li>
+            <li><a href="#contact"><strong>CONTACT</strong></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>  <!--End nav -->
+
+
+    <div class="wrap"><!--start wrapper -->
+
+
+      <div class="container bgimg1" id="home" >
+        <div class="row homepage">
+          <div class="col-md-6">
+            <iframe src="clock.html" scrolling="no"></iframe>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <form class="regform">
+              <input class="reg" type="button" value="REGISTER" data-toggle="modal" data-target="#register" /><br>
+
+              <!--modal start-->
+                <div class="modal fade" id="register"  tabindex="-1" role="dialog">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button data-dismiss="modal" class="btn pull-right btncancel">&times;</button>
+                        <h4>Company Register</h4>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail3">Company address</label>
+                            <input type="email" class="form-control" id="exampleInputPassword3" placeholder="Company Name">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword3">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                          </div>
+                          <!--<div class="form-group pull-left">
+                            <button type="submit" class="btn btn-primary btn-sm brows">BROWSE &nbsp;&nbsp;<i class="fa fa-image"></i></button>
+                            <input type="text" placeholder="logo">
+                          </div>--><br>
+                          <div class="checkbox pull-left">
+                            <label class="rememberme"><input type="checkbox"> REMEMBER ME</label>
+                          </div>
+                          
+                          <br><br>
+                          <button type="submit" class="btn btn-primary btn-lg submitcolor" id="sub"><a class="subpayment" href="payment.html">SUBMIT</a></button>
+                        </form>
+                      </div>
+                      
+                    </div>  
+                  </div>
+                </div>
+              <!--modal end-->
+              <input class="log" type="button" value="STAFF LOGIN" data-toggle="modal" data-target="#logIn" /><br>
+              <!--modal start-->
+                <div class="modal fade" id="logIn"  tabindex="-1" role="dialog">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button data-dismiss="modal" class="btn pull-right btncancel">&times;</button>
+                        <h4>Enter Login</h4>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail3">COMPANY ID</label>
+                            <input type="text" class="form-control" id="exampleInputPassword3" placeholder="COMPANY ID">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword3">USERNAME</label>
+                            <input type="text" class="form-control" id="exampleInputEmail3" placeholder="USERNAME">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword3">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="PASSWORD">
+                         </div>
+                          
+                          <div class="checkbox pull-left">
+                            <label class="rememberme"><input type="checkbox"> REMEMBER ME</label>
+                          </div>
+                          
+                          <br><br>
+                          <button type="submit" class="btn btn-primary btn-lg submitcolor">SIGN IN</button>
+                        </form>
+                      </div>
+                      
+                    </div>  
+                  </div>
+                </div>
+              <!--modal end-->
+              <input class="guest" type="button" data-toggle="modal" data-target="#guestt" value="GUEST"/>
+              <!--modal start-->
+                <div class="modal fade" id="guestt"  tabindex="-1" role="dialog">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button data-dismiss="modal" class="btn pull-right btncancel">&times;</button>
+                        <h4>Enter Login</h4>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail3">Full Name</label>
+                            <input type="text" class="form-control" id="exampleInputPassword3" placeholder="FULL NAME">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword3">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="EMAIL">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword3">Purose</label>
+                            <input type="text" class="form-control purpose" id="exampleInputPassword3" placeholder="PURPOSE">
+                         </div>
+                         
+                          <br><br>
+                          <button type="submit" class="btn btn-primary btn-lg submitcolor">SUBMIT</button>
+                        </form>
+                      </div>
+                      
+                    </div>  
+                  </div>
+                </div>
+              <!--modal end-->
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid wrap2">
+        <div class="container aboutpage" id="about">
+          <div  class="abtcontent">
+            <h4 class="text-center abt">ABOUT</h4>
+            <h5 class="uscontent">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h5>
+          
+          </div>
+        </div>
+
+        <div class="container kickpage">
+          <div class="row kickpagerow" >
+            <div class="col-md-4 col-sm-4 col-xm-12">
+              <img src="img/shield.png">
+              <h4 class="text-center">KICK IT OFF</h4>
+                <h5 class="kickcontent">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h5>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xm-12">
+              <img src="img/fire-3.png">
+              <h4 class="text-center">COLLABORATE</h4>
+              <h5 class="kickcontent">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h5>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xm-12">
+              <img src="img/alarm-bell.png">
+              <h4 class="text-center">LAUNCH</h4>
+              <h5 class="kickcontent">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="container contactpage" id="contact">
+          <div class="contactcontent">
+            <h4 class="text-center contact">CONTACT</h4>          
+          </div>    
+        </div>
+        <div class="fontawesome">
+          <i class="fa fa-mobile fa-2x"> &nbsp &nbsp </i><span>+2346783466676  +2346783466676</span><br>
+          <i class="fa fa-envelope fa-2x"> &nbsp  &nbsp </i><span>akinosotoyobaby@gmail.com</span><br>
+          <i class="fa fa-map-marker fa-2x"> &nbsp  &nbsp</i> <span>21, Olowolabayaki Akinoso Avenue, Lagos state</span><br><br><br>
+        </div>
+        
+      <div class="container-fluid wrap2">
+        <footer>
+          <div class="copy pull-left">
+            <p class="link"><span>&#169; All rights reserved | designed by&nbsp;GROUP TWO SWITCH</span></p>
+          </div>
+          <div class="social_icons pull-right">
+            <ul class="list-unstyled text-center">
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            </ul>
+          </div>
+        </footer>
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+      
+      
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+  </body>
+</html>

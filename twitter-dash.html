@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Welcome Home</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style>
+			.navbar-form {
+				margin-right: 15px;
+			}
+			.navbar {
+				border-bottom-width: 2px !important;
+				border-bottom-color: #d9d9d9;
+			}
+			.form-group {
+				margin-right: 20px;
+			}
+			.btn-group {
+				margin: 5px 0;
+			}
+			.btn-curve {
+				border-radius: 25px;
+				padding-left: 25px;
+				padding-right: 25px;
+				border: 2px solid #00ace6;
+			}
+			.btn-flat {
+				border-radius: 0 !important;
+				border-width: 2px;
+			}
+			.container-fluid {
+				background: #FFF;
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+			.flex-container {
+				display: flex;
+			}
+			.column-layout {
+				padding: 15px;	
+			}
+			.thumbs {
+				background: #990033;
+				height: 32px;
+				width: 32px;
+				margin: 10px 15px 10px 20px;
+				padding: 10px;
+			}
+			.tweet-text {
+				color: #d9d9d9;
+				border-radius: 0;
+				margin: auto;
+				border: 1px solid #00aaff;
+			}
+			.tweet-box {
+				background: #b3e6ff;
+				padding: 10px;
+			}
+			.main-column {
+				flex: 3;
+				order: 2;
+			}
+			.sidebar-left {
+				box-sizing: border-box;
+				flex: 2;
+				border: 2px solid #d9d9d9;
+ 				padding: 20px;
+ 				margin-left: 10px;
+ 				order: 3;
+ 			}
+			.sidebar-right {
+				flex: 2;
+				margin-right: 10px;
+				order: 1;
+			}
+			img {
+				height: 60px;
+				width: 60px;
+			}
+			.sky {
+				background: #80d4ff;
+			}
+			.teal {
+				background: #80ffbf;
+			}
+			.olive {
+				background: #80bfff;
+			}
+			.brack {
+				background: #ff6666;
+			}
+			.media-left {
+				padding: 10px;
+			}
+			.media-body {
+				margin-left: 20px;
+				padding-left: 20px;
+			}
+			.a {
+				margin-right: 10px; 
+			}
+			.no-rad {
+				border-radius: 0px;
+			}
+			.bordertop {
+				padding-top: 20px;
+				border: 2px solid #d9d9d9;
+				border-top: none;
+			}
+			.pad-item {
+				padding-bottom: 20px;
+				padding-left: 10px;
+				border-bottom: 2px solid #d9d9d9;
+			}
+			.side-content {
+				padding: 20px;
+				border: 2px solid #d9d9d9;
+				
+			}
+			.card-header {
+				background: #008ae6;
+				height: 200px;
+			}
+			.card-details {
+				border: 2px solid #d9d9d9;
+				padding: 5px 30px 30px;
+			}
+			.profile-card {
+				margin-bottom: 20px
+			}
+			.row-space {
+				justify-content: space-around;
+			}
+			.row h4 {
+				padding-right: 20px;
+			}
+			.avatar {
+				background: #008ae6;
+				border: 2px solid #EEE;
+				border-radius: 25%;
+				height: 80px;
+				width: 80px;
+				position: absolute;
+				top: 250px;
+				left: 100px;
+			}
+			.fa {
+				color: #FFF;
+				margin: auto;
+			}
+
+		</style>
+	</head>
+	<body>
+		
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<div class="btn-group btn-group-lg">
+						<button type="button" class="btn btn-default btn-flat">Home</button>
+						<button type="button" class="btn btn-default btn-flat">Notifications</button>
+						<button type="button" class="btn btn-default btn-flat">Messages</button>
+					</div>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control btn-curve" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default btn-curve">Tweet</button>
+					</form>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+		<div class="container-fluid">
+			<div class="column-layout flex-container">
+				<div class="main-column">
+					<div class="tweet-box flex-container">
+						<div class="thumbs"></div>						
+						<input type="text" class="form-control tweet-text" placeholder="What's happening?">
+					</div>
+						<div class="bordertop">
+							<div class="media pad-item">
+								<a class="media-left teal">
+									<img src="image/group-image.png">
+								</a>
+								<div class="media-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									
+								</div>
+							</div>
+							<div class="media pad-item">
+								<a class="media-left sky">
+									<img src="image/group-image.png">
+								</a>
+								<div class="media-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</div>
+							</div>
+							<div class="media pad-item">
+								<a class="media-left olive">
+									<img src="image/group-image.png">
+								</a>
+								<div class="media-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</div>
+							</div>
+							<div class="media pad-item">
+								<a class="media-left brack">
+									<img src="image/group-image.png">
+								</a>
+								<div class="media-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									
+								</div>
+							</div>
+							<div class="media pad-item">
+								<a class="media-left olive">
+									<img src="image/group-image.png">
+								</a>
+								<div class="media-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<button type="button" class="btn btn-md btn-primary no-rad">Button</button>
+								</div>
+							</div>
+							<div>
+								<div class="panel">
+								<br>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				<div class="sidebar-right">
+					<div class="profile-card">
+						<div class="avatar flex-container">
+							<i class="fa fa-user fa-3x"></i>
+						</div>
+						<div class="card-header"></div>
+						<div class="card-details">
+							<div class="row">
+								<h4 class="pull-right"><b>Kellie B. Rowland</b></h4>
+							</div>
+							<div class="row row-space flex-container">
+								<div class="row-item">
+									<p>TWEETS</p>
+								</div>
+								<div class="row-item">
+									<p>FOLLOWING</p>
+								</div>
+								<div class="row-item">
+									<p>FOLLOWERS</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="side-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. </p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. </p>
+
+					</div>
+				</div>
+				<div class="sidebar-left">
+					<p><b>Lorem Ipsum</b></p>
+					<div class="media">
+						<a class="media-left sky">
+							<img src="image/group-image.png">
+						</a>
+						<div class="media-body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<button type="button" class="btn btn-md btn-primary no-rad">Button</button>
+						</div>
+					</div>
+					<div class="media">
+						<a class="media-left olive">
+							<img src="image/group-image.png">
+						</a>
+						<div class="media-body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<button type="button" class="btn btn-md btn-primary no-rad">Button</button>
+						</div>
+					</div>
+					<div class="media">
+						<a class="media-left teal">
+							<img src="image/group-image.png">
+						</a>
+						<div class="media-body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<button type="button" class="btn btn-md btn-primary no-rad">Button</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+ 		<script src="Hello World"></script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+body {
+	background: #FFF;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+.card {
+	border-radius: 5px;
+	background: white;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(63, 63, 68, 0.1);
+	margin-bottom: 20px;
+}
+.thumbnail {
+	border: none;
+	padding: 0;
+	margin-bottom: 0;
+}
+.card .contents {
+	padding: 10px;
+}
+.card .thumbnail img {
+	height: 200px;
+
+}

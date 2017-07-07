@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Solar system</title>
+	<style type="text/css">
+		html, body {
+			margin: 0;
+			padding: 0;
+			background: #404040;
+			
+		}
+		.container {			
+			height: 100%;
+			width: 100%;
+		}
+		.sun {
+			background: orange;
+			/*z-index: 2;*/
+			height: 100px;
+			width: 100px;
+			border-radius: 100%;
+			position: absolute;
+			margin-top: -50px;
+			margin-left: -50px;
+			top: 50%;
+			left: 50%;
+			box-shadow: 0 0 50px #ffd11a
+
+		}
+		.orbit {
+			border: solid 1px white;
+			height: 150px;
+			width: 150px;
+			border-radius: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -75px;
+			margin-left: -75px;
+			animation: spin 7s infinite;
+			animation-timing-function: linear;
+		}
+
+		.orbit1 {
+			border: solid 1px white;
+			height: 200px;
+			width: 200px;
+			border-radius: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -100px;
+			margin-left: -100px;
+			animation: spin 7s infinite;
+			animation-timing-function: linear;
+			
+		}
+		.orbit2 {
+			border: solid 1px white;
+			height: 250px;
+			width: 250px;
+			border-radius: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -125px;
+			margin-left: -125px;
+			animation: spin 7s infinite;
+			animation-timing-function: linear;
+			anima
+			
+		}
+		
+		.orbit3 {
+			border: solid 1px white;
+			height: 300px;
+			width: 300px;
+			border-radius: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -150px;
+			margin-left: -150px;
+			animation: spin 7s infinite;
+			animation-timing-function: linear;
+			
+		}
+		.orbit4 {
+			border: solid 1px white;
+			height: 350px;
+			width: 350px;
+			border-radius: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -175px;
+			margin-left: -175px;
+			animation: spin 7s infinite;
+			animation-timing-function: linear;
+			
+		}
+		.orbit5 {
+			border: solid 1px white;
+			height: 400px;
+			width: 400px;
+			border-radius: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -200px;
+			margin-left: -200px;
+			animation: spin 7s infinite;
+			animation-timing-function: linear;
+			
+		}
+		.planet {
+			height: 20px;
+			width: 20px;
+			background: red;
+			border-radius: 100%;
+			position: relative;
+			top: 0%;
+			left: 75px;
+			margin-left: -10px;
+			margin-top: -10px;
+			
+		}
+		.planet1 {
+			height: 20px;
+			width: 20px;
+			background: blue;
+			border-radius: 100%;
+			position: relative;
+			top: 50%;
+			left: 0%;
+			margin-left: -10px;
+			margin-top: -10px;			
+		}
+		.planet2 {
+			height: 20px;
+			width: 20px;
+			background: lightblue;
+			border-radius: 100%;
+			position: relative;
+			top: 185px;
+			left: 15px;
+			margin-left: -10px;
+			margin-top: -10px;			
+		}
+		.planet3 {
+			height: 20px;
+			width: 20px;
+			background: #ff3333;
+			border-radius: 100%;
+			position: relative;
+			top: 45px;
+			left: 45px;
+			margin-left: -10px;
+			margin-top: -10px;			
+		}
+		.planet4 {
+			height: 20px;
+			width: 20px;
+			background: #ff9966;
+			border-radius: 100%;
+			position: relative;
+			top: 50%;
+			left: 0%;
+			margin-left: -10px;
+			margin-top: -10px;			
+		}
+		.planet5 {
+			height: 20px;
+			width: 20px;
+			background: brown;
+			border-radius: 100%;
+			position: relative;
+			top: 100px;
+			left: 375px;
+			margin-left: -10px;
+			margin-top: -10px;			
+		}
+
+		@keyframes spin {
+			from { transform: rotate(0); }
+			to { transform: rotate(360deg); }
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="sun"></div>
+		<div class="orbit">
+			<div class="planet"></div>
+		</div>
+		<div class="orbit1">
+			<div class="planet1"></div>
+		</div>
+		<div class="orbit2">
+			<div class="planet2"></div>
+			
+		</div>
+		<div class="orbit3">
+			<div class="planet3"></div>
+		</div>
+		<div class="orbit4">
+			<div class="planet4"></div>
+		</div>
+		<div class="orbit5">
+			<div class="planet5"></div>
+		</div>
+		
+	</div>
+</body>
+</html>

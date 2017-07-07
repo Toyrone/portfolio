@@ -4,12 +4,37 @@
 	<title>Overlay</title>
 	<style type="text/css">
 		.container {
-			width: 400px;
-			height: 300px;
+			width: 300px;
+			height: 400px;
 			overflow: hidden;
 			position: relative;
+			border: 1px solid silver;
 		}
-		.container img {
+		.container .upper {
+			width: 100%;
+			height: 200px;
+			margin: 0 0 1px;
+			padding: 0;
+			background: #EEE;
+			overflow: hidden;
+		}
+		.container .upper img {
+			width: 100%;
+			height: auto;
+		}
+		.container .lower {
+			width: 100%;
+			height: 200px;
+			margin: 0;
+			padding: 0;
+			background: #EEE;
+			display: flex;
+			align-items: center;
+			align-items: center;
+			justify-content: center;
+		
+		}
+		/*.container img {
 			width: 100%;
 			height: auto;
 
@@ -23,25 +48,31 @@
 			right: 0;
 			width: 100%;
 			height: 100%;
-			background: rgba(0,0,0,0.5);
+			background: rgba(255,255,255,0.5);
 			z-index: 2;
 			transform: scale(0);
 			/*transform: translateY(-300px)*/
-			transition: all ease 1s;
+			/*transition: all ease 1s;
 
 		}
 		.container:hover 
 		.overlay {
-			/*transform: translateY(0px);*/
-			transform: scale(1);
-		}
+			transform: translateY(0px);
+			/*transform: scale(1);
+		}*/
 	</style>
 </head>
 <body>
-<div class="container">
+	<!--<div class="container">
 	<img src="C5g4hOXWAAAkacj.jpg">
 	<div class="overlay">
 		<p>This is how a cool overlay looks</p>
+	</div>-->
+	<div class="container">
+		<div class="upper">
+			<img src="TY1.PNG">
+		</div>
+		<div class="lower">P</div>
 	</div>
 </div>
 

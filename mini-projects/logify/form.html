@@ -1,0 +1,157 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/payment.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+         <!-- start nav -->
+        <nav class="navbar navcolor navbar-fixed-top" role="navigation"> 
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="" href="#"><img class="logoimg" src="img/logo.png"></a>
+              </div>
+            </div>
+        </nav>  <!--End nav -->
+
+        <div class="container wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                        <label><strong>Subscription</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select class="input-lg">
+                            <option>5 years</option>
+                            <option>2 years</option>
+                            <option>1 years</option>
+                            <option>6 months</option>
+                            <option>3 months</option>
+                        </select>
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Salutation</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select class="input-lg">
+                                <option>Mr</option>
+                                <option>Mrs</option>
+                                <option>Miss</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Company Name</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="input-lg">
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Company Address</strong></label>&nbsp;&nbsp;
+                            <input type="text" class="input-lg">
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Contact Person</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="input-lg">
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Phone Number</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="tel" id="inputPhone" maxlength="14" name="phone" required="required" title="" class="input-lg">
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Alternative Phone</strong></label>&nbsp;&nbsp;
+                            <input type="tel" id="inputPhone" maxlength="14" name="phone" required="required" title="" class="input-lg">
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Company Id</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="input-lg">
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label><strong>State</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="input-lg">
+                        </div>
+                        <div class="form-group">
+                            <label><strong>City</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="input-lg">
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Local Gov. Area</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="input-lg">
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Country</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="input-lg">
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Email</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="email" class="input-lg">
+                        </div>
+                        <div class="form-group">
+                            <label ><strong>Password</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="password" class="input-lg">
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Confirm Password</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="password" class="input-lg">
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Company Logo</strong></label>
+                            <input type="file" class="input-lg">
+                        </div>
+                        <button type="submit" class="btn btn-lg browse">SUBMIT</button>
+                    </div>   
+                </div>
+            </div>
+        </div>
+            
+             
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+        
+
+          <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+  </body>
+</html>
